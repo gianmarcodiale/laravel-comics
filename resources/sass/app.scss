@@ -35,3 +35,17 @@
         background-position: top;
     }
 }
+
+section.comics {
+    padding: 2rem 0;
+    background-color: black;
+    img {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+    h5 {
+        color: white;
+        text-transform: uppercase;
+        padding-top: 0.5rem;
+    }
+}
