@@ -1,5 +1,5 @@
 //
-@use 'bootstrap';
+@use "bootstrap";
 
 #site_header {
     .header-top {
@@ -30,7 +30,7 @@
     }
 
     .jumbo {
-        background-image: url('../img/jumbotron.jpg');
+        background-image: url("../img/jumbotron.jpg");
         height: 450px;
         background-position: top;
     }
@@ -39,9 +39,12 @@
 section.comics {
     padding: 2rem 0;
     background-color: black;
-    img {
-        width: 100%;
+    .card-img {
         aspect-ratio: 1/1;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
     }
     h5 {
         color: white;

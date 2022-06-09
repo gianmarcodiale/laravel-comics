@@ -12218,9 +12218,13 @@ section.comics {
   background-color: black;
 }
 
-section.comics img {
-  width: 100%;
+section.comics .card-img {
   aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+section.comics .card-img img {
+  width: 100%;
 }
 
 section.comics h5 {
