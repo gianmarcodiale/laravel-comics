@@ -1,1 +1,37 @@
 //
+@use 'bootstrap';
+
+#site_header {
+    .header-top {
+        background-color: blue;
+        .links {
+            column-gap: 4rem;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    #site_nav {
+        padding: 2rem 0;
+        nav {
+            column-gap: 2rem;
+            a {
+                text-decoration: none;
+                color: #333333;
+                text-transform: uppercase;
+            }
+        }
+        input {
+            border: none;
+            border-bottom: 2px solid blue;
+        }
+    }
+
+    .jumbo {
+        background-image: url('../img/jumbotron.jpg');
+        height: 450px;
+        background-position: top;
+    }
+}
