@@ -24,9 +24,20 @@ Route::get('/characters', function () {
 Route::get('/comics', function () {
     $comics_list = config('db.comics_list');
     //dd($comics);
-    return view('comics', compact('comics_list'));
-})->name('comics');
+    return view('comics.comics', compact('comics_list'));
+})->name('comics.comics');
 
+Route::get('/comics/{id}', function ($id) {
+    $comics_list = config('db.comics_list');
+    if ($id >= 0 && is_numeric($id) && $id < count($comics_list)) {
+        //dd($id);
+        dd($comics_list[$id]);
+        $comic = $comics_list[$id];
+        return view('comics.show', compact($comic));
+    } else {
+        abort(404);
+    }
+})->name('comics.show');
 
 Route::get('/moveis', function () {
     return 'Movies page';
