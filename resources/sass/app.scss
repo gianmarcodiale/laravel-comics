@@ -87,3 +87,14 @@ section.comics {
     background-image: url('../img/footer-bg.jpg');
     background-size: cover;
 }
+
+//Page Show
+
+.blue_banner {
+    height: 100px;
+    background-color: $dc-primary;
+    .thumb {
+        margin-top: -13rem;
+        border: 1px solid white;
+    }
+}

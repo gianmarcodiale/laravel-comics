@@ -10300,3 +10300,12 @@ section.comics .load-more-btn button {
   background-image: url("../img/footer-bg.jpg");
   background-size: cover;
 }
+
+.blue_banner {
+  height: 100px;
+  background-color: #0282f9;
+}
+.blue_banner .thumb {
+  margin-top: -13rem;
+  border: 1px solid white;
+}
