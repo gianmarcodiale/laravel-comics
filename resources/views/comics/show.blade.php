@@ -33,13 +33,13 @@
                     <div class="artists">
                         <span>Art by: </span>
                         @foreach ($comic['artists'] as $artists_list)
-                            <span>{{ $artists_list }}</span>
+                            <span class="text-primary">{{ $artists_list }}</span>
                         @endforeach
                     </div>
                     <div class="writers">
                         <span>Written by: </span>
                         @foreach ($comic['writers'] as $writers_list)
-                            <span>{{ $writers_list }}</span>
+                            <span class="text-primary">{{ $writers_list }}</span>
                         @endforeach
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                     <h3>Specs</h3>
                     <div class="series">
                         <span>Series: </span>
-                        <span>{{ $comic['series'] }}</span>
+                        <span class="text-primary">{{ $comic['series'] }}</span>
                     </div>
                     <div class="specs_price">
                         <span>U.S. Price: </span>
