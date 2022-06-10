@@ -10300,6 +10300,16 @@ section.comics .load-more-btn button {
   background-image: url("../img/footer-bg.jpg");
   background-size: cover;
 }
+#site_footer a {
+  text-decoration: none;
+  color: white;
+}
+#site_footer .dc_logo {
+  background-image: url("../img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .blue_banner {
   height: 100px;
