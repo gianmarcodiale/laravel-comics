@@ -3,7 +3,7 @@
 @section('content')
     <section class="comics">
         <div class="container">
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
                 @foreach ($comics_list as $comic)
                     <div class="col">
                         <div class="card-img">
@@ -14,5 +14,35 @@
                 @endforeach
             </div>
         </div>
+        <div class="load-more-btn">
+            <button>Load More</button>
+        </div>
     </section>
+
+    <div class="banner bg-primary py-5 text-white text-uppercase">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img width="60" src="{{asset('img/buy-comics-digital-comics.png')}}" alt="">
+                    <span>digital comics</span>
+                </div>
+                <div class="col">
+                    <img width="60" src="{{asset('img/buy-comics-merchandise.png')}}" alt="">
+                    <span>dc merchandise</span>
+                </div>
+                <div class="col">
+                    <img width="60" src="{{asset('img/buy-comics-subscriptions.png')}}" alt="">
+                    <span>subscription</span>
+                </div>
+                <div class="col">
+                    <img width="60" src="{{asset('img/buy-comics-shop-locator.png')}}" alt="">
+                    <span>comic shop locator</span>
+                </div>
+                <div class="col">
+                    <img width="60" src="{{asset('img/buy-dc-power-visa.svg')}}" alt="">
+                    <span>dc power visa</span>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

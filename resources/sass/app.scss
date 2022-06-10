@@ -1,9 +1,18 @@
 //
 @use "bootstrap";
 
+$dc-primary: #0282f9;
+$dc-banner-bg: #1c1c1c;
+$dc-footer-bg: #303030;
+$dc-text-dark: #464646;
+$dc-text-white: #fffff2;
+$dc-text-grey: #797777;
+
+//Region Header
+
 #site_header {
     .header-top {
-        background-color: blue;
+        background-color: $dc-primary;
         .links {
             column-gap: 4rem;
             a {
@@ -19,26 +28,32 @@
             column-gap: 2rem;
             a {
                 text-decoration: none;
-                color: #333333;
+                color: $dc-text-dark;
                 text-transform: uppercase;
+                &.active,
+                &:hover {
+                    text-decoration: underline 4px $dc-primary;
+                }
             }
         }
         input {
             border: none;
-            border-bottom: 2px solid blue;
+            border-bottom: 2px solid $dc-primary;
         }
     }
-
     .jumbo {
         background-image: url("../img/jumbotron.jpg");
-        height: 450px;
-        background-position: top;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
+//Region Main
+
 section.comics {
     padding: 2rem 0;
-    background-color: black;
+    background-color: $dc-banner-bg;
     .card-img {
         aspect-ratio: 1/1;
         overflow: hidden;
@@ -47,8 +62,28 @@ section.comics {
         }
     }
     h5 {
-        color: white;
+        color: $dc-text-white;
         text-transform: uppercase;
         padding-top: 0.5rem;
     }
+    .load-more-btn {
+        padding: 1rem;
+        text-align: center;
+        button {
+            background-color: $dc-primary;
+            border: none;
+            color: white;
+            padding: 0.5rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+}
+
+//Region Footer
+
+#site_footer {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
 }
