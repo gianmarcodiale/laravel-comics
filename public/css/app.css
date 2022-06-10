@@ -10309,3 +10309,7 @@ section.comics .load-more-btn button {
   margin-top: -13rem;
   border: 1px solid white;
 }
+
+.comic_info span {
+  line-height: 3rem;
+}
