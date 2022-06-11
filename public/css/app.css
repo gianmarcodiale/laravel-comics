@@ -10228,6 +10228,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 #site_header .header-top {
   background-color: #0282f9;
 }
@@ -10248,6 +10252,7 @@ textarea.form-control-lg {
 }
 #site_header #site_nav nav a {
   text-decoration: none;
+  font-weight: bold;
   color: #464646;
   text-transform: uppercase;
 }
@@ -10266,9 +10271,24 @@ textarea.form-control-lg {
   background-size: cover;
 }
 
-section.comics {
-  padding: 2rem 0;
+#main_page {
+  padding: 6rem 0;
   background-color: #1c1c1c;
+}
+#main_page p {
+  margin-bottom: 0;
+}
+
+section.comics {
+  padding: 5rem 0;
+  background-color: #1c1c1c;
+}
+section.comics .section_title {
+  width: 230px;
+  background-color: #0282f9;
+  margin-top: -7rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 section.comics .card-img {
   aspect-ratio: 1/1;
@@ -10276,6 +10296,9 @@ section.comics .card-img {
 }
 section.comics .card-img img {
   width: 100%;
+}
+section.comics a {
+  text-decoration: none;
 }
 section.comics h5 {
   color: #fffff2;
@@ -10294,6 +10317,10 @@ section.comics .load-more-btn button {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+section.comics .load-more-btn button:hover {
+  background-color: #fffff2;
+  color: #0282f9;
 }
 
 #site_footer {

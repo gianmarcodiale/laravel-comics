@@ -16,7 +16,7 @@
 
             <nav class="d-flex">
                 <a href="{{ route('characters') }}" class="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}">characters</a>
-                <a href="{{ route('comics.comics') }}" class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">comics</a>
+                <a href="{{ route('comics.index') }}" class="{{ Route::currentRouteName() === 'comics.index' || Route::currentRouteName() === 'comics.show' ? 'active' : '' }}">comics</a>
                 <a href="{{ route('movies') }}" class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}">movies</a>
                 <a href="{{ route('tv') }}" class="{{ Route::currentRouteName() === 'tv' ? 'active' : '' }}">tv</a>
                 <a href="{{ route('games') }}" class="{{ Route::currentRouteName() === 'games' ? 'active' : '' }}">games</a>
